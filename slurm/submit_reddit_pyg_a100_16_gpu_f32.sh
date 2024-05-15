@@ -25,4 +25,4 @@ export PATH=/sbin:$PATH # to find ldconfig
 echo $MASTER_ADDR
 echo $MASTER_PORT
 
-mpirun -v -np 16 -ppn 4 -print-rank-map -prepend-rank python script_reddit_pyg_a100_distributed_test.py --partition gpu-a100 --hardware nvidia --gpus 16 --nodes 4 --dtype f32 
+mpirun -v -np 16 -ppn 4 -print-rank-map -prepend-rank python script_reddit_pyg_a100_distributed_test.py --partition gpu-a100 --batch_size 2048 --hardware nvidia --gpus 16 --nodes 4 --dtype f32 
