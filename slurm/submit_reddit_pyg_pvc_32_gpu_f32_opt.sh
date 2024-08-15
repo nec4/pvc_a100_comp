@@ -29,4 +29,4 @@ conda activate pyg_bench
 
 scontrol show hostname
 
-mpirun -v -np 32 -ppn 8 -print-rank-map -prepend-rank python script_reddit_pyg_pvc_distributed_test.py --gpus 32 --nodes 4 --dtype f32 --batch_size 1024 --optimize true
+mpirun -v -np 32 -ppn 8 -print-rank-map -prepend-rank python ../python/script_reddit_pyg_pvc_distributed_test.py --gpus 32 --nodes 4 --dtype f32 --batch_size 1024 --optimize true
