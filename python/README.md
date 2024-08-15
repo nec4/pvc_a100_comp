@@ -9,4 +9,6 @@ backends -- otherwise the tasks should be the same between the two. Tasks are
 distributed and pinned using Intel MPI and `mpirun` (see `slurm` directory
 above).
 
+For script-specific options, pass the `--help` flag.
+
 
